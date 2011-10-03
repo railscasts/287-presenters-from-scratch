@@ -5,6 +5,6 @@ private
 
   def present(object, klass = nil)
     klass ||= "#{object.class}Presenter".constantize
-    klass.new(order, view_context)
+    klass.new(object, view_context)
   end
 end
